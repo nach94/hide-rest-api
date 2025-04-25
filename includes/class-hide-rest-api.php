@@ -145,10 +145,14 @@ class Hide_Rest_Api {
 	 */
 	private function define_admin_hooks() {
 
+		require_once plugin_dir_path(dirname(__FILE__)) . 'admin/class-hide-rest-api-admin.php';
+
 		$plugin_admin = new Hide_Rest_Api_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_plugin_admin_menu' );
+		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_settings' );
 
 	}
 	

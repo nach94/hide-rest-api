@@ -54,6 +54,52 @@ class Hide_Rest_Api_Admin {
 
 	}
 
+	public function add_plugin_admin_menu() {
+		add_menu_page(
+			'Hide REST API',
+			'Hide REST API',
+			'manage_options',
+			'hide-rest-api',
+			array( $this, 'display_plugin_admin_page' ),
+			'dashicons-admin-generic',
+			81
+		);
+	}
+
+	public function register_settings() {
+		register_setting(
+			'hide_rest_api_options_group',
+			'_hide_full_api'            
+		);
+	
+		register_setting(
+			'hide_rest_api_options_group',
+			'_hide_users_api'
+		);
+
+		register_setting(
+			'hide_rest_api_options_group',
+			'_hide_posts_api'
+		);
+
+		register_setting(
+			'hide_rest_api_options_group',
+			'_hide_pages_api'
+		);
+	
+		add_settings_section(
+			'hide_rest_api_main_section',
+			'',
+			null,
+			'hide_rest_api'
+		);
+	}
+
+
+	public function display_plugin_admin_page() {
+		include_once plugin_dir_path( __FILE__ ) . 'partials/hide-rest-api-admin-display.php';
+	}
+
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
