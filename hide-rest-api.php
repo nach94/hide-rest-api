@@ -63,6 +63,7 @@ register_deactivation_hook( __FILE__, 'deactivate_hide_rest_api' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-hide-rest-api.php';
+require_once plugin_dir_path(__FILE__) . 'includes/class-hide-rest-api-functions.php';
 
 /**
  * Begins execution of the plugin.
