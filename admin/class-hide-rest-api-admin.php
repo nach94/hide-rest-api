@@ -69,29 +69,7 @@ class Hide_Rest_Api_Admin {
 	public function register_settings() {
 		register_setting(
 			'hide_rest_api_options_group',
-			'_hide_full_api'            
-		);
-	
-		register_setting(
-			'hide_rest_api_options_group',
-			'_hide_users_api'
-		);
-
-		register_setting(
-			'hide_rest_api_options_group',
-			'_hide_posts_api'
-		);
-
-		register_setting(
-			'hide_rest_api_options_group',
-			'_hide_pages_api'
-		);
-	
-		add_settings_section(
-			'hide_rest_api_main_section',
-			'',
-			null,
-			'hide_rest_api'
+			'hide_rest_api_options'
 		);
 	}
 

@@ -137,6 +137,10 @@
     margin: 0;
 }
 
+.text-center {
+    text-align: center;
+}
+
 :root {
     --space-4xs: clamp(0.52rem, calc(-0.03vw + 0.53rem), 0.49rem);
     --space-3xs: clamp(0.66rem, calc(0.04vw + 0.64rem), 0.7rem);
@@ -172,4 +176,5 @@
     --header-height: 0px;
     --blue: #0845FF;
     --light-blue: #dde5ff;
+    --grey: #e9e9e9;
 }
