@@ -8,12 +8,12 @@
  * included in this file.
  */
 
-#adminmenu .toplevel_page_auto-delete-images .wp-menu-image:before {
+#adminmenu .toplevel_page_hide-rest-api .wp-menu-image::before {
 	content: "";
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url('../assets/api-interface-svgrepo-com.svg') no-repeat center center;
+	background: url('../assets/api-svgrepo-com.svg') no-repeat center center;
 	background-size: contain;
 	margin: auto;
 }
@@ -135,10 +135,6 @@
 
 .margin-left-zero {
     margin: 0;
-}
-
-.text-center {
-    text-align: center;
 }
 
 :root {

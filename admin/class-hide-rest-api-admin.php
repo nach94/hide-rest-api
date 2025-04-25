@@ -62,7 +62,7 @@ class Hide_Rest_Api_Admin {
 			'hide-rest-api',
 			array( $this, 'display_plugin_admin_page' ),
 			'dashicons-admin-generic',
-			81
+			82
 		);
 	}
 

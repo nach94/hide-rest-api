@@ -16,14 +16,13 @@ $options = get_option('hide_rest_api_options', []);
 
 ?>
 
-
-
 <div class=" flex-column gap-s bg-dark-grey-2 text-white padding-l">
     <img class="max-width-10" src="https://helloeveryone.me/wp-content/uploads/HelloEveryone-Logo-300x79.webp" alt="Logo Hello Everyone">
     <address class="text-xs flex-row items-middle gap-xs">
         Desarrollado por&nbsp;<a class="text-white transition-global" href="https://helloeveryone.me" rel="noreferrer" target="_blank">Hello Everyone</a>
     </address>
 </div>
+
 <div class="padding-l text-black">
     <h1 class="text-l font-700"> Opciones de <span class="underline">Hide REST API</span></h1>
     <p class="margin-top-s text-s">El plugin oculta toda la REST API de WordPress por defecto. Pero puedes habilitar algunos endpoints si así lo necesitas.</p>
@@ -46,10 +45,10 @@ $options = get_option('hide_rest_api_options', []);
                 </tr>
 
                 <tr>
-                    <th scope="row" class="text-center">
+                    <th scope="row">
                         <label for="_hide_full_api">Hacer pública toda mi API</label>
                     </th>
-                    <td class="text-center">
+                    <td>
                         <input type="checkbox" name="hide_rest_api_options[_show_full_api]" id="_show_full_api" value="1" <?php checked(isset($options['_show_full_api']), 1); ?>>
                     </td>
                 </tr>
