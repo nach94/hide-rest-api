@@ -40,19 +40,6 @@ $options = get_option('hide_rest_api_options', []);
             </thead>
             <tbody>
 
-                <tr>
-                    <th colspan="2" style="background: #e9e9e9; font-weight: bold; text-transform: uppercase;">API Full</th>
-                </tr>
-
-                <tr>
-                    <th scope="row">
-                        <label for="_hide_full_api">Hacer pública toda mi API</label>
-                    </th>
-                    <td>
-                        <input type="checkbox" name="hide_rest_api_options[_show_full_api]" id="_show_full_api" value="1" <?php checked(isset($options['_show_full_api']), 1); ?>>
-                    </td>
-                </tr>
-
                 <!-- POST TYPES -->
                 <tr>
                     <th colspan="2" style="background: #e9e9e9; font-weight: bold; text-transform: uppercase;">Post Types</th>
